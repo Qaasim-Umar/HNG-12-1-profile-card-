@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="profile-card">
+    <!-- Profile Picture -->
+    <img src="profile.jpg" alt="Profile Picture" data-testid="profilePicture" class="profile-picture">
+
+    <!-- Full Name -->
+    <h1 data-testid="fullName">John Doe</h1>
+
+    <!-- Job Title -->
+    <h2 data-testid="jobTitle">Software Engineer</h2>
+
+    <!-- Short Bio -->
+    <p data-testid="shortBio">
+      Hi, I'm John! I'm a passionate software engineer with expertise in building scalable web applications. I love working with JavaScript, React, and Node.js. In my free time, I contribute to open-source projects and write tech blogs.
+    </p>
+
+    <!-- Current Location -->
+    <p data-testid="currentLocation">📍 New York, USA</p>
+
+    <!-- Email Address -->
+    <p data-testid="emailAddress">📧 john.doe@example.com</p>
+
+    <!-- Social Links -->
+    <div class="social-links" data-testid="socialLinks">
+      <a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn</a>
+      <a href="https://github.com/johndoe" target="_blank">GitHub</a>
+      <a href="https://twitter.com/johndoe" target="_blank">Twitter</a>
+    </div>
+
+    <!-- Current Time in UTC -->
+    <p data-testid="currentTimeUTC">🕒 Current UTC Time: <span id="utc-time"></span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
